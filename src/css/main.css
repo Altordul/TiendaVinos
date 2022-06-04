@@ -1,11 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Junge&family=Kaisei+HarunoUmi:wght@400;500;700&display=swap");
 body {
   background-color: #120204;
   color: white;
 }
 
+h1 {
+  font-family: "Italiana", serif;
+}
+
+h2 {
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
 section {
   min-height: 100vh;
   background-color: #120204;
+}
+
+.wine-bottle {
+  padding: 0.7rem 0;
+}
+.wine-bottle ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+.wine-bottle .img-center {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+.wine-bottle img {
+  height: 200px;
+}
+.wine-bottle .bottle-img, .wine-bottle h3, .wine-bottle h4 {
+  text-align: center;
+}
+.wine-bottle .buy {
+  display: flex;
+  justify-content: center;
+}
+.wine-bottle .buy button {
+  padding: 0.7rem 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
