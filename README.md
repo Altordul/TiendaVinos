@@ -1,2 +1,5 @@
 # TiendaVinos
-pagina de una tienda de vinos practica 
+
+## To compile sass use: 
+  sass --watch .\src\scss\main.scss .\src\css\main.css
+  
