@@ -17,29 +17,60 @@ section {
   background-color: #120204;
 }
 
-.wine-bottle {
-  padding: 0.7rem 0;
+.bg-traslucent {
+  background-color: #1202049d;
 }
-.wine-bottle ul li {
+.bg-traslucent a {
+  color: #B11226;
+}
+.bg-traslucent a:hover {
+  color: white;
+}
+
+.red-icon {
+  color: #B11226;
+  font-size: 3rem;
+}
+
+.catalogo {
+  box-sizing: border-box;
+  margin: 0.7rem;
+}
+.catalogo .catalogo-menu {
+  font-size: 1.2rem;
+  list-style-type: none;
+  justify-content: center;
+}
+.catalogo .catalogo-menu span {
+  padding: 0.5rem;
+}
+.catalogo .wine-bottle {
+  font-family: "Kaisei HarunoUmi", serif;
+  background-color: #140305;
+  padding: 0.7rem 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  margin: 0.7rem 0;
+}
+.catalogo .wine-bottle ul li {
   list-style-type: none;
   font-size: 1.2rem;
 }
-.wine-bottle .img-center {
+.catalogo .wine-bottle .img-center {
   margin: 0 auto;
   text-align: center;
   padding: 0.5rem;
 }
-.wine-bottle img {
+.catalogo .wine-bottle img {
   height: 200px;
 }
-.wine-bottle .bottle-img, .wine-bottle h3, .wine-bottle h4 {
+.catalogo .wine-bottle .bottle-img, .catalogo .wine-bottle h3, .catalogo .wine-bottle h4 {
   text-align: center;
 }
-.wine-bottle .buy {
+.catalogo .wine-bottle .buy {
   display: flex;
   justify-content: center;
 }
-.wine-bottle .buy button {
+.catalogo .wine-bottle .buy button {
   padding: 0.7rem 1rem;
 }
 
