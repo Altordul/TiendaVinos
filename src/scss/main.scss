@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Junge&family=Kaisei+HarunoUmi:wght@400;500;700&display=swap');
+
+//fonts
+$heading: 'Italiana', serif;
+$heading2: 'Kaisei HarunoUmi', serif;
+$menu: 'Junge', serif;
+
+// Colors
+$olive: #9E6C16;
+$strong-wine: #B11226;
+$dark-wine: #58181F;
+$card-dark-wine: #140305;;
+$dark: #120204;
+//Estilos generales
+body{
+    background-color: $dark;
+    color: white;
+}
+h1{
+    font-family: $heading;
+}
+h2{
+    font-family: $heading2;
+}
+section{
+    min-height: 100vh;
+    background-color: $dark;
+}
+
+// estilos especificos
+.bg-traslucent{
+    background-color:#1202049d;
+    a{
+        color: $strong-wine;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.red-icon{
+    color: $strong-wine;
+    font-size: 3rem;
+}
+.catalogo{
+    box-sizing: border-box;
+    margin: .7rem;
+    .catalogo-menu{
+        font-size: 1.2rem;
+        list-style-type: none;
+        justify-content:center;
+        span{
+            padding: .5rem;
+        }
+    }
+    .wine-bottle{
+        font-family: 'Kaisei HarunoUmi', serif;
+        background-color: $card-dark-wine;
+        padding: .7rem 0;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
+        margin: .7rem 0;
+    
+        ul li{
+            list-style-type: none;
+            font-size: 1.2rem;
+        }
+    
+    
+        .img-center{
+            margin: 0 auto;
+            text-align: center;
+            padding: .5rem;
+        }
+        img{
+            height: 200px;
+        }
+        .bottle-img, h3, h4{
+            text-align: center;
+        }
+        .buy{
+            display:flex;
+            justify-content:center;
+            button{
+                padding: .7rem 1rem;
+            }
+        }
+    }
+}

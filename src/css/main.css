@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Junge&family=Kaisei+HarunoUmi:wght@400;500;700&display=swap");
+body {
+  background-color: #120204;
+  color: white;
+}
+
+h1 {
+  font-family: "Italiana", serif;
+}
+
+h2 {
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #120204;
+}
+
+.bg-traslucent {
+  background-color: #1202049d;
+}
+.bg-traslucent a {
+  color: #B11226;
+}
+.bg-traslucent a:hover {
+  color: white;
+}
+
+.red-icon {
+  color: #B11226;
+  font-size: 3rem;
+}
+
+.catalogo {
+  box-sizing: border-box;
+  margin: 0.7rem;
+}
+.catalogo .catalogo-menu {
+  font-size: 1.2rem;
+  list-style-type: none;
+  justify-content: center;
+}
+.catalogo .catalogo-menu span {
+  padding: 0.5rem;
+}
+.catalogo .wine-bottle {
+  font-family: "Kaisei HarunoUmi", serif;
+  background-color: #140305;
+  padding: 0.7rem 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  margin: 0.7rem 0;
+}
+.catalogo .wine-bottle ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+.catalogo .wine-bottle .img-center {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+.catalogo .wine-bottle img {
+  height: 200px;
+}
+.catalogo .wine-bottle .bottle-img, .catalogo .wine-bottle h3, .catalogo .wine-bottle h4 {
+  text-align: center;
+}
+.catalogo .wine-bottle .buy {
+  display: flex;
+  justify-content: center;
+}
+.catalogo .wine-bottle .buy button {
+  padding: 0.7rem 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
