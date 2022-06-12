@@ -35,10 +35,13 @@ body{
     }
 }
 .container{
+    max-width: 1200px;
+    margin: 0 auto;
     section{
         min-height: 100vh;
         .text-box{
             width: 80%;
+            max-width: 540px;
             padding: .7rem;
             background-color: $dark;
             color: #B11226;
