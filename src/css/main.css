@@ -46,4 +46,45 @@ body {
   align-items: center;
 }
 
+#shop {
+  background-color: #120204;
+  color: white;
+}
+#shop .wine {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 230px;
+}
+#shop .wine .img-wrapper {
+  text-align: center;
+  height: 15rem;
+}
+#shop .wine .img-wrapper img {
+  height: 100%;
+}
+#shop .wine .content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#shop .wine .content h1, #shop .wine .content h2 {
+  text-align: center;
+}
+#shop .wine .content h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+#shop .wine .content a {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.2rem;
+  background-color: #0075C4;
+}
+
 /*# sourceMappingURL=main.css.map */
