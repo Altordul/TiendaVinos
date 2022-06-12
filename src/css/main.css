@@ -25,11 +25,16 @@ body {
   display: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .container section {
   min-height: 100vh;
 }
 .container section .text-box {
   width: 80%;
+  max-width: 540px;
   padding: 0.7rem;
   background-color: #120204;
   color: #B11226;
