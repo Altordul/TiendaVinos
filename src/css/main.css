@@ -134,4 +134,117 @@ body {
   align-items: center;
 }
 
+#featured {
+  background-image: url("../../public/img/backgrounds/marvin-l-61sZcZl3Mlk-unsplash (1).jpg");
+  background-position: center center;
+  object-fit: cover;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+#featured p {
+  color: white;
+}
+#featured .title {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 40%;
+  order: 2;
+  text-align: center;
+}
+#featured .title h1 {
+  color: #B11226;
+}
+#featured .title h2 {
+  color: #9E6C16;
+}
+#featured .img-wrapper {
+  order: 3;
+  display: flex;
+  align-items: center;
+}
+#featured .menu-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#featured .menu-wrapper ul {
+  height: 60%;
+  order: 1;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+#shop {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: #120204;
+  color: white;
+}
+#shop .wine {
+  background-color: #140305;
+  padding: 0.7rem;
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 250px;
+}
+#shop .wine .img-wrapper {
+  text-align: center;
+  height: 15rem;
+}
+#shop .wine .img-wrapper img {
+  height: 100%;
+}
+#shop .wine .content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#shop .wine .content h1, #shop .wine .content h2 {
+  margin: 0.2rem;
+  text-align: center;
+}
+#shop .wine .content h1, #shop .wine .content h2 {
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+#shop .wine .content ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+#shop .wine .content ul li img {
+  height: 1.2rem;
+}
+#shop .wine .content a {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.2rem;
+  background-color: #0075C4;
+  transition: 250ms ease-in-out;
+}
+#shop .wine .content a:hover {
+  background-color: white;
+  color: #58181F;
+}
+
 /*# sourceMappingURL=main.css.map */
