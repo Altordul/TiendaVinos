@@ -11,30 +11,116 @@ $strong-wine: #B11226;
 $dark-wine: #58181F;
 $card-dark-wine: #140305;;
 $dark: #120204;
-$lblue: #0075C4;
 //Estilos generales
 body{
     margin: 0;
     font-family: $menu;
-    background-color: rgb(7, 7, 7);
 }
 #logo{
-    height:5rem;
+    top: 2vh;
+    left: 2vh;
+    height:13vh;
+    position: relative;
+    z-index: 1000;
 }
 #menu-icon{
-    filter: invert(12%) sepia(74%) saturate(4962%) hue-rotate(344deg) brightness(93%) contrast(96%);
-    height: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #120204;
+}
+    
+    
+.menu{
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #120204;
+    position: fixed;
+    right: 4vh;
+    top: 4vh;
+    transition: 0.3s;
+}
+.hide-menu{
+    position: fixed;
+    top: 4vh;
+    right: 4vh;
+    transition: 0.3s;
+}
+    
+.line1,
+.line2,
+.line3{
+    width: 10vh;
+    height: 1.6vh;
+    margin: 2px;
+    background-color: #B11226;
+    transition: 0.3s;
+    }
+    
+.hide .line1{
+    transform: translate(0,2vh)rotate(-405deg);
+    position: fixed;
+}
+    
+.hide .line2{
+    opacity: 0;
+    transform: /** translate(0vh,-20vh)**/ rotate(360deg);
+    position: relative;
+}
+    
+.hide .line3{
+    transform: rotate(405deg);
+    position: fixed;
 }
 .navbar{
     background-color: #120204;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15vh;
     .navbar-flex{
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
-    .hide{
-        display:none;
+
+    .desplegable{
+    position: fixed;
+    font-family: var($heading2);
+    list-style: none;
+    font-size: x-large;
+    font-style: italic;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translate(0,-100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #120204;
+    .linea-contenido-sola{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin-top: 5%;
     }
+            }
+    }
+.linea-contenido-sola{
+    background-image: linear-gradient(#ffffff, #120204);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    
+}
+.linea-contenido-sola:hover, .linea-contenido-sola:focus {
+    background-size: 100% 2px;
+}
+
+.desplegable.active{
+    top: 15%;
+    background-color: #120204;
+    transform: translate(0,0);
 }
 .container{
     max-width: 1200px;
@@ -56,121 +142,3 @@ body{
         align-items: center;
     }
 }
-
-
-#featured{
-    
-    background-image: url('../../public/img/backgrounds/marvin-l-61sZcZl3Mlk-unsplash\ \(1\).jpg');
-    background-position:center center;
-    object-fit: cover;
-
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    p{
-        color: white;
-    }
-    .title{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        width: 40%;
-        order: 2;
-        text-align: center;
-        h1{
-            color: $strong-wine;
-        }
-        h2{
-            color: $olive;
-        }
-        
-    }
-    .img-wrapper{
-        order: 3;
-        display: flex;
-        align-items: center;
-    }
-    .menu-wrapper{
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        ul{
-            height: 60%;
-            order:1;
-            color: white;
-            list-style-type: none;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-around;
-        }
-    }
-}
-
-#shop{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-    background-color: $dark;
-    color: white;
-    .wine{
-        background-color: $card-dark-wine;
-        padding: .7rem;
-        display: flex;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-            flex-flow: column nowrap;
-            align-items: center;
-        max-width: 250px;
-        .img-wrapper{
-            text-align: center;
-            height:15rem;
-            img{
-                height: 100%;
-            }
-        }
-        .content{
-            display: flex;
-            flex-flow: column nowrap;
-            h1,h2{
-                margin: .2rem;
-                text-align: center;
-            }
-            h1, h2{
-                text-transform: uppercase;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 1; /* number of lines to show */
-                        line-clamp: 1;
-                -webkit-box-orient: vertical;
-            }
-            ul li{
-                list-style-type: none;
-                font-size: 1.2rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 1; /* number of lines to show */
-                        line-clamp: 1;
-                -webkit-box-orient: vertical;
-                img{
-                    height: 1.2rem;
-                }
-            }
-            a{
-                text-decoration: none;
-                color: white;
-                align-self: center;
-                padding: .5rem 1.2rem;
-                border-radius: 1.2rem;
-                background-color: $lblue;
-                transition: 250ms ease-in-out;
-                &:hover{
-                    background-color: white;
-                    color: $dark-wine;
-                }
-            }
-        }
-    }
-}   
