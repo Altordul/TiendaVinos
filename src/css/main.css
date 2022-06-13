@@ -5,24 +5,112 @@ body {
 }
 
 #logo {
-  height: 5rem;
+  top: 2vh;
+  left: 2vh;
+  height: 13vh;
+  position: relative;
+  z-index: 1000;
 }
 
 #menu-icon {
-  filter: invert(12%) sepia(74%) saturate(4962%) hue-rotate(344deg) brightness(93%) contrast(96%);
-  height: 3rem;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #120204;
+}
+
+.menu {
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #120204;
+  position: fixed;
+  right: 4vh;
+  top: 4vh;
+  transition: 0.3s;
+}
+
+.hide-menu {
+  position: fixed;
+  top: 4vh;
+  right: 4vh;
+  transition: 0.3s;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 10vh;
+  height: 1.6vh;
+  margin: 2px;
+  background-color: #B11226;
+  transition: 0.3s;
+}
+
+.hide .line1 {
+  transform: translate(0, 2vh) rotate(-405deg);
+  position: fixed;
+}
+
+.hide .line2 {
+  opacity: 0;
+  transform: rotate(360deg);
+  position: relative;
+}
+
+.hide .line3 {
+  transform: rotate(405deg);
+  position: fixed;
 }
 
 .navbar {
   background-color: #120204;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15vh;
 }
 .navbar .navbar-flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.navbar .hide {
-  display: none;
+.navbar .desplegable {
+  position: fixed;
+  font-family: var("Kaisei HarunoUmi", serif);
+  list-style: none;
+  font-size: x-large;
+  font-style: italic;
+  text-align: center;
+  transition: transform 0.3s ease;
+  transform: translate(0, -100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #120204;
+}
+.navbar .desplegable .linea-contenido-sola {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  margin-top: 5%;
+}
+
+.linea-contenido-sola {
+  background-image: linear-gradient(#ffffff, #120204);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.linea-contenido-sola:hover, .linea-contenido-sola:focus {
+  background-size: 100% 2px;
+}
+
+.desplegable.active {
+  top: 15%;
+  background-color: #120204;
+  transform: translate(0, 0);
 }
 
 .container {
