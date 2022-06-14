@@ -88,11 +88,14 @@ body {
   right: 0;
   background-color: #120204;
 }
+.navbar .desplegable .desplegable-conte {
+  margin-top: 20vh;
+}
 .navbar .desplegable .linea-contenido-sola {
   text-decoration: none;
   color: rgb(255, 255, 255);
   display: block;
-  margin-top: 5%;
+  margin-top: 5vh;
 }
 
 .linea-contenido-sola {
@@ -108,7 +111,7 @@ body {
 }
 
 .desplegable.active {
-  top: 15%;
+  top: 0;
   background-color: #120204;
   transform: translate(0, 0);
 }

@@ -97,11 +97,14 @@ body{
     left: 0;
     right: 0;
     background-color: #120204;
+    .desplegable-conte{
+        margin-top: 20vh;
+    }
     .linea-contenido-sola{
         text-decoration: none;
         color: rgb(255, 255, 255);
         display: block;
-        margin-top: 5%;
+        margin-top: 5vh;
     }
             }
     }
@@ -116,9 +119,8 @@ body{
 .linea-contenido-sola:hover, .linea-contenido-sola:focus {
     background-size: 100% 2px;
 }
-
 .desplegable.active{
-    top: 15%;
+    top: 0;
     background-color: #120204;
     transform: translate(0,0);
 }
