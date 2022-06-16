@@ -54,26 +54,28 @@ body{
 .line3{
     width: 10vh;
     height: 1.6vh;
-    margin: 2px;
+    margin: 0.5vh;
     background-color: #B11226;
     transition: 0.3s;
     }
     
+
 .hide .line1{
     transform: translate(0,2vh)rotate(-405deg);
     position: fixed;
 }
     
 .hide .line2{
-    opacity: 0;
-    transform: /** translate(0vh,-20vh)**/ rotate(360deg);
+
+    transform:  translate(0vh,2vh)rotate(-405deg);
     position: relative;
 }
     
 .hide .line3{
-    transform: rotate(405deg);
+    transform: translate(0vh,-0.8vh)rotate(-490deg);
     position: fixed;
 }
+
 .navbar{
     background-color: #120204;
     position: fixed;
@@ -99,11 +101,15 @@ body{
     left: 0;
     right: 0;
     background-color: #120204;
+    .desplegable-conte{
+        margin-top: 20vh;
+    }
     .linea-contenido-sola{
         text-decoration: none;
         color: rgb(255, 255, 255);
         display: block;
-        margin-top: 5%;
+        font-size: 7vh;
+        margin-top: 10vh;
     }
             }
     }
@@ -120,7 +126,7 @@ body{
 }
 
 .desplegable.active{
-    top: 15%;
+    top: 0;
     background-color: #120204;
     transform: translate(0,0);
 }
