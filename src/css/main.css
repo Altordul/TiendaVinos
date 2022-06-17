@@ -42,7 +42,7 @@ body {
 .line3 {
   width: 10vh;
   height: 1.6vh;
-  margin: 2px;
+  margin: 0.5vh;
   background-color: #B11226;
   transition: 0.3s;
 }
@@ -53,13 +53,12 @@ body {
 }
 
 .hide .line2 {
-  opacity: 0;
-  transform: rotate(360deg);
+  transform: translate(0vh, 2vh) rotate(-405deg);
   position: relative;
 }
 
 .hide .line3 {
-  transform: rotate(405deg);
+  transform: translate(0vh, -0.8vh) rotate(-490deg);
   position: fixed;
 }
 
@@ -83,17 +82,25 @@ body {
   text-align: center;
   transition: transform 0.3s ease;
   transform: translate(0, -100%);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0vh;
+  bottom: 0vh;
+  left: 0vh;
+  right: 0vh;
   background-color: #120204;
+}
+.navbar .desplegable .desplegable-conte {
+  margin-top: 0vh;
 }
 .navbar .desplegable .linea-contenido-sola {
   text-decoration: none;
   color: rgb(255, 255, 255);
   display: block;
-  margin-top: 5%;
+  font-size: 5vh;
+  margin-top: 5vh;
+}
+
+#linea-contenido1 {
+  margin-top: 25vh;
 }
 
 .linea-contenido-sola {
@@ -109,7 +116,7 @@ body {
 }
 
 .desplegable.active {
-  top: 15%;
+  top: 0;
   background-color: #120204;
   transform: translate(0, 0);
 }
