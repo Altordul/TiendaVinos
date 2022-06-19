@@ -28,7 +28,7 @@ body{
 #menu-icon{
     cursor: pointer;
     z-index: 1000;
-    background-color: #120204;
+    background-color: $dark;
 }
     
     
@@ -36,17 +36,15 @@ body{
     flex-direction: column;
     cursor: pointer;
     z-index: 1000;
-    background-color: #120204;
+    background-color: $dark;
     position: fixed;
     right: 4vh;
     top: 4vh;
-    transition: 0.3s;
 }
 .hide-menu{
     position: fixed;
     top: 4vh;
     right: 4vh;
-    transition: 0.3s;
 }
     
 .line1,
@@ -55,7 +53,7 @@ body{
     width: 10vh;
     height: 1.6vh;
     margin: 0.5vh;
-    background-color: #B11226;
+    background-color: $strong-wine;
     transition: 0.3s;
     }
     
@@ -77,7 +75,7 @@ body{
 }
 
 .navbar{
-    background-color: #120204;
+    background-color: $dark;
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,25 +94,29 @@ body{
     text-align: center;
     transition: transform 0.3s ease;
     transform: translate(0,-100%);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #120204;
+    top: 0vh;
+    bottom: 0vh;
+    left: 0vh;
+    right: 0vh;
+    background-color: $dark;
     .desplegable-conte{
-        margin-top: 20vh;
+        margin-top: 0vh;
     }
     .linea-contenido-sola{
         text-decoration: none;
         color: rgb(255, 255, 255);
         display: block;
-        font-size: 7vh;
-        margin-top: 10vh;
+        font-size: 5vh;
+        margin-top: 5vh;
+
     }
             }
     }
+#linea-contenido1{
+    margin-top: 20vh;
+}
 .linea-contenido-sola{
-    background-image: linear-gradient(#ffffff, #120204);
+    background-image: linear-gradient(#ffffff, $dark);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -122,12 +124,12 @@ body{
     
 }
 .linea-contenido-sola:hover, .linea-contenido-sola:focus {
-    background-size: 100% 2px;
+    background-size: 100% 0.2vh;
 }
 
 .desplegable.active{
     top: 0;
-    background-color: #120204;
+    background-color: $dark;
     transform: translate(0,0);
 }
 .container{
@@ -140,7 +142,7 @@ body{
             max-width: 540px;
             padding: .7rem;
             background-color: $dark;
-            color: #B11226;
+            color: $strong-wine;
         }
     }
     .landing{
