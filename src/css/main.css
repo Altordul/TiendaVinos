@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Junge", serif;
-  background-color: rgb(7, 7, 7);
+  background-color: #070707;
 }
 
 #logo {
@@ -91,7 +91,7 @@ body {
 }
 .navbar .desplegable .linea-contenido-sola {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   display: block;
   font-size: 5vh;
   margin-top: 5vh;
@@ -185,6 +185,24 @@ body {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 800px) {
+  #featured {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #featured .menu-wrapper {
+    height: max-content;
+    width: 100%;
+    order: 3;
+  }
+  #featured .menu-wrapper ul {
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 #shop {
   display: grid;
   justify-items: center;
@@ -222,7 +240,8 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
   line-clamp: 1;
   -webkit-box-orient: vertical;
 }
@@ -232,7 +251,8 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
   line-clamp: 1;
   -webkit-box-orient: vertical;
 }

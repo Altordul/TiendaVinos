@@ -155,7 +155,7 @@ body{
 
 
 #featured{
-    
+
     background-image: url('../../public/img/backgrounds/marvin-l-61sZcZl3Mlk-unsplash\ \(1\).jpg');
     background-position:center center;
     object-fit: cover;
@@ -179,7 +179,7 @@ body{
         h2{
             color: $olive;
         }
-        
+
     }
     .img-wrapper{
         order: 3;
@@ -201,7 +201,25 @@ body{
         }
     }
 }
-
+@media screen and (max-width: 800px) {
+    #featured{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .menu-wrapper {
+            height: max-content;
+            width: 100%;
+            order: 3;
+            ul{
+                width: 100%;
+                padding: 0;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            
+        }
+    }
+}
 #shop{
     display: grid;
     justify-items: center;
