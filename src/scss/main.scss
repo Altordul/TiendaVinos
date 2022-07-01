@@ -11,10 +11,12 @@ $strong-wine: #B11226;
 $dark-wine: #58181F;
 $card-dark-wine: #140305;;
 $dark: #120204;
+$lblue: #0075C4;
 //Estilos generales
 body{
     margin: 0;
     font-family: $menu;
+    background-color: rgb(7, 7, 7);
 }
 #logo{
     top: 2vh;
@@ -26,7 +28,7 @@ body{
 #menu-icon{
     cursor: pointer;
     z-index: 1000;
-    background-color: #120204;
+    background-color: $dark;
 }
     
     
@@ -34,17 +36,15 @@ body{
     flex-direction: column;
     cursor: pointer;
     z-index: 1000;
-    background-color: #120204;
+    background-color: $dark;
     position: fixed;
     right: 4vh;
     top: 4vh;
-    transition: 0.3s;
 }
 .hide-menu{
     position: fixed;
     top: 4vh;
     right: 4vh;
-    transition: 0.3s;
 }
     
 .line1,
@@ -52,28 +52,30 @@ body{
 .line3{
     width: 10vh;
     height: 1.6vh;
-    margin: 2px;
-    background-color: #B11226;
+    margin: 0.5vh;
+    background-color: $strong-wine;
     transition: 0.3s;
     }
     
+
 .hide .line1{
     transform: translate(0,2vh)rotate(-405deg);
     position: fixed;
 }
     
 .hide .line2{
-    opacity: 0;
-    transform: /** translate(0vh,-20vh)**/ rotate(360deg);
+
+    transform:  translate(0vh,2vh)rotate(-405deg);
     position: relative;
 }
     
 .hide .line3{
-    transform: rotate(405deg);
+    transform: translate(0vh,-0.8vh)rotate(-490deg);
     position: fixed;
 }
+
 .navbar{
-    background-color: #120204;
+    background-color: $dark;
     position: fixed;
     top: 0;
     width: 100%;
@@ -92,6 +94,7 @@ body{
     text-align: center;
     transition: transform 0.3s ease;
     transform: translate(0,-100%);
+<<<<<<< HEAD
     top: 0;
     bottom: 0;
     left: 0;
@@ -99,17 +102,35 @@ body{
     background-color: #120204;
     .desplegable-conte{
         margin-top: 20vh;
+=======
+    top: 0vh;
+    bottom: 0vh;
+    left: 0vh;
+    right: 0vh;
+    background-color: $dark;
+    .desplegable-conte{
+        margin-top: 0vh;
+>>>>>>> e20ede8fc8e36e35557ed5592b78d0a4bd79faaf
     }
     .linea-contenido-sola{
         text-decoration: none;
         color: rgb(255, 255, 255);
         display: block;
+<<<<<<< HEAD
         margin-top: 5vh;
+=======
+        font-size: 5vh;
+        margin-top: 5vh;
+
+>>>>>>> e20ede8fc8e36e35557ed5592b78d0a4bd79faaf
     }
             }
     }
+#linea-contenido1{
+    margin-top: 20vh;
+}
 .linea-contenido-sola{
-    background-image: linear-gradient(#ffffff, #120204);
+    background-image: linear-gradient(#ffffff, $dark);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -117,11 +138,15 @@ body{
     
 }
 .linea-contenido-sola:hover, .linea-contenido-sola:focus {
-    background-size: 100% 2px;
+    background-size: 100% 0.2vh;
 }
 .desplegable.active{
     top: 0;
+<<<<<<< HEAD
     background-color: #120204;
+=======
+    background-color: $dark;
+>>>>>>> e20ede8fc8e36e35557ed5592b78d0a4bd79faaf
     transform: translate(0,0);
 }
 .container{
@@ -134,7 +159,7 @@ body{
             max-width: 540px;
             padding: .7rem;
             background-color: $dark;
-            color: #B11226;
+            color: $strong-wine;
         }
     }
     .landing{
@@ -144,3 +169,138 @@ body{
         align-items: center;
     }
 }
+
+
+#featured{
+
+    background-image: url('../../public/img/backgrounds/marvin-l-61sZcZl3Mlk-unsplash\ \(1\).jpg');
+    background-position:center center;
+    object-fit: cover;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    p{
+        color: white;
+    }
+    .title{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 40%;
+        order: 2;
+        text-align: center;
+        h1{
+            color: $strong-wine;
+        }
+        h2{
+            color: $olive;
+        }
+
+    }
+    .img-wrapper{
+        order: 3;
+        display: flex;
+        align-items: center;
+    }
+    .menu-wrapper{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        ul{
+            height: 60%;
+            order:1;
+            color: white;
+            list-style-type: none;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    #featured{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .menu-wrapper {
+            height: max-content;
+            width: 100%;
+            order: 3;
+            ul{
+                width: 100%;
+                padding: 0;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            
+        }
+    }
+}
+#shop{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    background-color: $dark;
+    color: white;
+    .wine{
+        background-color: $card-dark-wine;
+        padding: .7rem;
+        display: flex;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+            flex-flow: column nowrap;
+            align-items: center;
+        max-width: 250px;
+        .img-wrapper{
+            text-align: center;
+            height:15rem;
+            img{
+                height: 100%;
+            }
+        }
+        .content{
+            display: flex;
+            flex-flow: column nowrap;
+            h1,h2{
+                margin: .2rem;
+                text-align: center;
+            }
+            h1, h2{
+                text-transform: uppercase;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1; /* number of lines to show */
+                        line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+            ul li{
+                list-style-type: none;
+                font-size: 1.2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1; /* number of lines to show */
+                        line-clamp: 1;
+                -webkit-box-orient: vertical;
+                img{
+                    height: 1.2rem;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                align-self: center;
+                padding: .5rem 1.2rem;
+                border-radius: 1.2rem;
+                background-color: $lblue;
+                transition: 250ms ease-in-out;
+                &:hover{
+                    background-color: white;
+                    color: $dark-wine;
+                }
+            }
+        }
+    }
+}   
