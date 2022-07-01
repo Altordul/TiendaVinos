@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine Valley</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 <body>
     <header class="navbar">
         <div class="navbar-flex">
-            <a href="#"><img id="logo" src="../public/img/Logo.png" alt="Logo"></a>
+            <a href="#"><img id="logo" src="./public/img/Logo.png" alt="Logo"></a>
             <div id="menu" class="menu" onclick="desplegarMenu(this)">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -38,10 +39,279 @@
         </section>
         <section class="landing">
             <div class="text-box">
-                <h1>"Wine is bottled poetry"</h1></section>
+                <h1>"Wine is bottled poetry"</h1>
             </div>
-        <section>Featured Wine</section>
-        <section>Shop</section>
+        </section>
+        <section id="featured">
+            <div class="title">
+                <h1>OUR BEST SELLER</h1>
+                <h2>CHATEAU DE MALIGNY CHABLIS PREMIER CRU 'FOURCHAUME' 2018</h2>
+                <p>The 2018 Jean Durup & Fils Chateau de Maligny Chablis Fourchaume Premier Cru is a round, supple wine
+                    with a good structure typical of Premier Crus. Its roundness and flexibility will allow you to enjoy
+                    it now. In the case of a Chablis Premier Cru, however, it will gain by aging a few years to express
+                    itself at its true value. </p>
+            </div>
+            <div class="img-wrapper">
+                <img src="./public/img/wine-bottles/Rxg_HyC7Qf2KR7kN--iyRA_pb_x600.png" alt="" srcset="">
+            </div>
+            <div class="menu-wrapper">
+                <ul>
+                    <li id="button">
+                        <span>SEC</span>
+                        <div id="tooltip" role="tooltip">I'm a tooltip</div>
+                    </li>
+                    <li>ALB</li>
+                    <li>12.5%</li>
+                    <li>750ml</li>
+                    <li>Italy</li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <section id="shop">
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/1i1MlXXaS7qHjS84jPKX3Q_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>LA CHABLISIENNE</h1>
+                    <h2>CHABLIS 1ER CRU FOURCHAUME</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Bourgogne Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Chardonnay</li>
+                        <li><img src="./public/icons/flag.svg">Bourgogne</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/uf3a1F82SGuBiTtJAdRJhA_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>UMANI RONCHI</h1>
+                    <h2> Cùmaro Conero Riserva</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Tintilia</li>
+                        <li><img src="./public/icons/flag.svg">Italy / Molise</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/4fVjSKYtQcSx_mOBWZtDOg_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Albert Bichot</h1>
+                    <h2>Chablis</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Burgundy Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Tintilia</li>
+                        <li><img src="./public/icons/flag.svg">Bourgogne</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/nBupGePBQt-PepuMfRdW-g_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Tombacco</h1>
+                    <h2>Biferno Rosso Riserva</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Montepulciano</li>
+                        <li><img src="./public/icons/flag.svg">Biferno</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/pUJHLZWdSOWU2dUOyzpRKw_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Fiore Podere San Biagio</h1>
+                    <h2>Cafone Colli Aprutini Rosso</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Montepulciano</li>
+                        <li><img src="./public/icons/flag.svg">Colli Aprutini</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/Rdcvxwk_THm1IVkQp57DUA_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Samuel Billaud</h1>
+                    <h2>Chablis (Les Grands Terroirs)</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Burgundy Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Chardonnay</li>
+                        <li><img src="./public/icons/flag.svg">Colli Aprutini</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/1i1MlXXaS7qHjS84jPKX3Q_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>LA CHABLISIENNE</h1>
+                    <h2>CHABLIS 1ER CRU FOURCHAUME</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Bourgogne Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Chardonnay</li>
+                        <li><img src="./public/icons/flag.svg">Bourgogne</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/uf3a1F82SGuBiTtJAdRJhA_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>UMANI RONCHI</h1>
+                    <h2> Cùmaro Conero Riserva</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Tintilia</li>
+                        <li><img src="./public/icons/flag.svg">Italy / Molise</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/4fVjSKYtQcSx_mOBWZtDOg_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Albert Bichot</h1>
+                    <h2>Chablis</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Burgundy Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Tintilia</li>
+                        <li><img src="./public/icons/flag.svg">Bourgogne</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/nBupGePBQt-PepuMfRdW-g_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Tombacco</h1>
+                    <h2>Biferno Rosso Riserva</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Montepulciano</li>
+                        <li><img src="./public/icons/flag.svg">Biferno</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/pUJHLZWdSOWU2dUOyzpRKw_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Fiore Podere San Biagio</h1>
+                    <h2>Cafone Colli Aprutini Rosso</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Montepulciano</li>
+                        <li><img src="./public/icons/flag.svg">Colli Aprutini</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/Rdcvxwk_THm1IVkQp57DUA_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Samuel Billaud</h1>
+                    <h2>Chablis (Les Grands Terroirs)</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Burgundy Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Chardonnay</li>
+                        <li><img src="./public/icons/flag.svg">Colli Aprutini</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/4fVjSKYtQcSx_mOBWZtDOg_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Albert Bichot</h1>
+                    <h2>Chablis</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">White</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Burgundy Chablis</li>
+                        <li><img src="./public/icons/grapes.svg">Tintilia</li>
+                        <li><img src="./public/icons/flag.svg">Bourgogne</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/nBupGePBQt-PepuMfRdW-g_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Tombacco</h1>
+                    <h2>Biferno Rosso Riserva</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Montepulciano</li>
+                        <li><img src="./public/icons/flag.svg">Biferno</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+            </div>
+            <div class="wine">
+                <div class="img-wrapper">
+                    <img src="./public/img/wine-bottles/pUJHLZWdSOWU2dUOyzpRKw_pb_x600.png" alt="LA CHABLISIENNE">
+                </div>
+                <div class="content">
+                    <h1>Fiore Podere San Biagio</h1>
+                    <h2>Cafone Colli Aprutini Rosso</h2>
+                    <ul>
+                        <li><img src="./public/icons/wine-glass.svg">Red</li>
+                        <li><img src="./public/icons/wine-bottle.svg">Central Italy Red</li>
+                        <li><img src="./public/icons/grapes.svg">Montepulciano</li>
+                        <li><img src="./public/icons/flag.svg">Colli Aprutini</li>
+                    </ul>
+                    <a href="#" class="btn-buy">19,90€</a>
+                </div>
+
+        </section>
     </main>
 
     <script src="./js/app.js"></script>
