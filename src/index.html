@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine Valley</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 <body>
     <header class="navbar">
@@ -38,7 +39,7 @@
         </section>
         <section class="landing">
             <div class="text-box">
-                <h1>"Wine is bottled poetry"</h1></section>
+                <h1>"Wine is bottled poetry"</h1>
             </div>
         </section>
         <section id="featured">
@@ -55,7 +56,10 @@
             </div>
             <div class="menu-wrapper">
                 <ul>
-                    <li>SEC</li>
+                    <li id="button">
+                        <span>SEC</span>
+                        <div id="tooltip" role="tooltip">I'm a tooltip</div>
+                    </li>
                     <li>ALB</li>
                     <li>12.5%</li>
                     <li>750ml</li>
